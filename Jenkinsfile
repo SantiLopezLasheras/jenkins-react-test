@@ -15,25 +15,39 @@ pipeline {
       }
     }
     stage('Linter') {
-      echo "Linting"
+      steps {
+        echo "Linting"
+      }
     }
     stage('Test') {
-      echo "Test"
+      steps {
+        echo "Test"
+      }
     }
     stage('Build') {
-      echo "Build"
+      steps {
+        echo "Build"
+      }
     }
     stage('Update_Readme') {
-      echo "Update Readme"
+      steps {
+        echo "Update_Readme"
+      }
     }
     stage('Push_Changes') {
-      echo "Push changes"
+      steps {
+        echo "Push_Changes"
+      }
     }
     stage('Deploy to Vercel') {
-      echo "Deploy to Vercel"
+      steps {
+        echo "Deploy to Vercel"
+      }
     }
     stage('Notificació') {
-      echo "Notificació"
+      steps {
+        echo "Notificació"
+      }
     }
   }
 }
