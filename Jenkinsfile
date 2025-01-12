@@ -1,6 +1,6 @@
 pipeline {
   agent any
-  tools { nodejs 'Node'}
+  tools { nodejs 'Node' }
   parameters {
     string(name: 'persona_a_saludar', defaultValue: 'user', description: 'Nombre de la persona')
   }
