@@ -50,4 +50,12 @@ pipeline {
       }
     }
   }
+  post {
+    always {
+      script {
+        sh "npm install node-telegram-bot-api"
+        sh "node ./jenkinsScripts/sendMessage.js '${params.chatId}'"
+      }
+    }
+  }
 }
