@@ -16,7 +16,7 @@ pipeline {
     }
     stage('Linter') {
       steps {
-        echo "Linting"
+        sh "npm run lint"
       }
     }
     stage('Test') {
@@ -26,7 +26,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        echo "Build"
+        sh "npm run build"
       }
     }
     stage('Update_Readme') {
