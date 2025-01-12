@@ -5,8 +5,11 @@ const bot = new TelegramBot(botToken, { polling: true });
 const message = process.argv[2];
 bot
   .sendMessage(chatId, message)
-  .then((data) => {
+  .then(() => {
     console.log("Telegram sended");
     process.exit(0);
   })
-  .catch((e) => process.exit(1));
+  .catch((e) => {
+    console.log(e);
+    process.exit(1);
+  });
