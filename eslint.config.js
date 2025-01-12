@@ -1,7 +1,6 @@
 import js from "@eslint/js";
 import globals from "globals";
 import react from "eslint-plugin-react";
-import jest from "eslint-plugin-jest";
 import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
 
@@ -24,7 +23,6 @@ export default [
     },
     settings: { react: { version: "18.3" } },
     plugins: {
-      jest: jest,
       react,
       "react-hooks": reactHooks,
       "react-refresh": reactRefresh,
