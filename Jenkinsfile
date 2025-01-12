@@ -54,7 +54,7 @@ pipeline {
     always {
       script {
         sh "npm install node-telegram-bot-api"
-        sh "node ./jenkinsScripts/sendMessage.js '${params.chatId}'"
+        sh "node ./jenkinsScripts/sendMessage.js '${params.chatID}'"
       }
     }
   }
