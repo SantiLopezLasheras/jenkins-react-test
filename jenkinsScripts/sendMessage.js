@@ -1,4 +1,4 @@
-const TelegramBot = require("node-telegram-bot-api");
+import TelegramBot from "node-telegram-bot-api";
 const chatId = process.argv[3];
 const botToken = "8083564169:AAEq3CdtmK7OmpIrAJS3HQeOmCyyyqdTUiE";
 const bot = new TelegramBot(botToken, { polling: true });
